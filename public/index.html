@@ -4,10 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+    <link rel="stylesheet" href="style.css">
     <title>Boilerplate App</title>
 </head>
 <body>
-    <h1>Boilerplate</h1>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper">
+            <!-- Slides -->
+            <li class="swiper-slide">Slide 1</li>
+            <li class="swiper-slide">Slide 2</li>
+            <li class="swiper-slide">Slide 3</li>
+            <li class="swiper-slide">Slide 4</li>
+            <li class="swiper-slide">Slide 5</li>
+        </ul>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
     <script src="/scripts/bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+    <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    })
+    </script>
 </body>
 </html>

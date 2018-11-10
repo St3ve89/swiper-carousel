@@ -1,0 +1,29 @@
+.swiper-container {
+    width: 600px;
+    height: 300px;
+}
+
+ul {
+    list-style: none;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    width: 100px;
+    height: 150px;
+    background: green;
+    border-radius: 35px;
+    text-align: center;
+}
+
+.swiper-slide-active {
+    width: 150px;
+    height: 200px
+}
+
+.swiper-slide:nth-child(odd) {
+    background: gray;
+}

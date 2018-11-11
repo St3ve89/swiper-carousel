@@ -12,7 +12,7 @@ ul {
 }
 
 .swiper-slide {
-    width: 100px;
+    /* width: 20%; */
     height: 150px;
     background: green;
     border-radius: 35px;
@@ -20,7 +20,7 @@ ul {
 }
 
 .swiper-slide-active {
-    width: 150px;
+    /* width: ; */
     height: 200px
 }
 
